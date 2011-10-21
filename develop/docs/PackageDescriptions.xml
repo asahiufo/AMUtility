@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<overviews>
+	<packages>
+		<package name="org.ahiufomasao.utility">
+			<shortDescription>
+			<![CDATA[
+				org.ahiufomasao.utility
+			]]>
+			</shortDescription>
+			<description>
+			<![CDATA[
+				org.ahiufomasao.utility
+			]]>
+			</description>
+		</package>
+		<package name="org.ahiufomasao.utility.core">
+			<shortDescription>
+			<![CDATA[
+				org.ahiufomasao.utility.core
+			]]>
+			</shortDescription>
+			<description>
+			<![CDATA[
+				org.ahiufomasao.utility.core
+			]]>
+			</description>
+		</package>
+		<package name="org.ahiufomasao.utility.display">
+			<shortDescription>
+			<![CDATA[
+				org.ahiufomasao.utility.display
+			]]>
+			</shortDescription>
+			<description>
+			<![CDATA[
+				org.ahiufomasao.utility.display
+			]]>
+			</description>
+		</package>
+		<package name="org.ahiufomasao.utility.events">
+			<shortDescription>
+			<![CDATA[
+				org.ahiufomasao.utility.events
+			]]>
+			</shortDescription>
+			<description>
+			<![CDATA[
+				org.ahiufomasao.utility.events
+			]]>
+			</description>
+		</package>
+		<package name="org.ahiufomasao.utility.geom">
+			<shortDescription>
+			<![CDATA[
+				org.ahiufomasao.utility.geom
+			]]>
+			</shortDescription>
+			<description>
+			<![CDATA[
+				org.ahiufomasao.utility.geom
+			]]>
+			</description>
+		</package>
+		<package name="org.ahiufomasao.utility.io">
+			<shortDescription>
+			<![CDATA[
+				org.ahiufomasao.utility.io
+			]]>
+			</shortDescription>
+			<description>
+			<![CDATA[
+				org.ahiufomasao.utility.io
+			]]>
+			</description>
+		</package>
+		<package name="org.ahiufomasao.utility.net">
+			<shortDescription>
+			<![CDATA[
+				org.ahiufomasao.utility.net
+			]]>
+			</shortDescription>
+			<description>
+			<![CDATA[
+				org.ahiufomasao.utility.net
+			]]>
+			</description>
+		</package>
+	</packages>
+</overviews>
