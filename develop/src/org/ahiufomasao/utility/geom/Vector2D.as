@@ -1,6 +1,6 @@
 ﻿package org.ahiufomasao.utility.geom 
 {
-	import org.ahiufomasao.utility.MathUtil;
+	import org.ahiufomasao.utility.MathUtility;
 	
 	/**
 	 * <code>Vector2D</code> クラスは、2 次元のベクトルを表現します.
@@ -50,7 +50,7 @@
 		public function setBy(size:Number, angle:Number):void
 		{
 			// ラジアン
-			var rad:Number = MathUtil.calculateRadians(angle);
+			var rad:Number = MathUtility.calculateRadians(angle);
 			
 			_x = size * Math.cos(rad);
 			_y = size * Math.sin(rad);
@@ -63,7 +63,7 @@
 		 */
 		public function getAngle():Number
 		{
-			var angle:Number = MathUtil.calculateAngle(Math.atan2(_y, _x));
+			var angle:Number = MathUtility.calculateAngle(Math.atan2(_y, _x));
 			angle = angle < 0 ? angle + 360 : angle;
 			return angle;
 		}

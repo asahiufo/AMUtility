@@ -10,6 +10,7 @@
 	import org.ahiufomasao.utility.geom.Vector2D;
 	import org.ahiufomasao.utility.io.KeyState;
 	import org.ahiufomasao.utility.io.MouseState;
+	import org.ahiufomasao.utility.MathUtility;
 	import org.ahiufomasao.utility.net.ILoader;
 	import org.ahiufomasao.utility.net.ImageLoader;
 	import org.ahiufomasao.utility.net.LoaderCollection;
@@ -17,6 +18,8 @@
 	import org.ahiufomasao.utility.net.NetStreamGroup;
 	import org.ahiufomasao.utility.net.SoundLoader;
 	import org.ahiufomasao.utility.net.StringLoader;
+	import org.ahiufomasao.utility.RectangleUtility;
+	import org.ahiufomasao.utility.StringUtility;
 	
 	/**
 	 * @private
@@ -49,6 +52,9 @@
 			StringLoader;
 			
 			DateUtility;
+			MathUtility;
+			RectangleUtility;
+			StringUtility
 		}
 	}
 }

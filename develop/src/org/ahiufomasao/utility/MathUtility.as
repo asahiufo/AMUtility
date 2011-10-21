@@ -11,7 +11,7 @@
 	 * 
 	 * @author asahiufo/AM902
 	 */
-	public class MathUtil 
+	public class MathUtility 
 	{
 		/**
 		 * 角度からラジアンを計算します.
