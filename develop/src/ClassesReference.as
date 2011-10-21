@@ -3,6 +3,7 @@
 	import org.ahiufomasao.utility.core.Enum;
 	import org.ahiufomasao.utility.DateUtility;
 	import org.ahiufomasao.utility.display.BitmapCanvas;
+	import org.ahiufomasao.utility.display.GraphicsDrawer;
 	import org.ahiufomasao.utility.events.EventListenerCarrier;
 	import org.ahiufomasao.utility.events.NetStreamGroupEvent;
 	import org.ahiufomasao.utility.events.NetStreamGroupEventKind;
@@ -32,6 +33,7 @@
 			Enum;
 			
 			BitmapCanvas;
+			GraphicsDrawer;
 			
 			EventListenerCarrier
 			NetStreamGroupEvent;
