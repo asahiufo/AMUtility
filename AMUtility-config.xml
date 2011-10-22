@@ -1,0 +1,34 @@
+﻿<flex-config>
+	<compiler>
+		<source-path>
+			<path-element>src</path-element>
+		</source-path>
+	</compiler>
+	<target-player>11.0</target-player>
+	<output>./bin/AMUtility_0_0_0.swc</output>
+	<include-classes>
+		<class>org.ahiufomasao.utility.ArchiveFileData</class>
+		<class>org.ahiufomasao.utility.Archiver</class>
+		<class>org.ahiufomasao.utility.core.Enum</class>
+		<class>org.ahiufomasao.utility.DateUtility</class>
+		<class>org.ahiufomasao.utility.display.BitmapCanvas</class>
+		<class>org.ahiufomasao.utility.display.GraphicsDrawer</class>
+		<class>org.ahiufomasao.utility.events.EventListenerCarrier</class>
+		<class>org.ahiufomasao.utility.events.NetStreamGroupEvent</class>
+		<class>org.ahiufomasao.utility.events.NetStreamGroupEventKind</class>
+		<class>org.ahiufomasao.utility.geom.Arithmetic</class>
+		<class>org.ahiufomasao.utility.geom.Vector2D</class>
+		<class>org.ahiufomasao.utility.io.KeyState</class>
+		<class>org.ahiufomasao.utility.io.MouseState</class>
+		<class>org.ahiufomasao.utility.MathUtility</class>
+		<class>org.ahiufomasao.utility.net.ILoader</class>
+		<class>org.ahiufomasao.utility.net.ImageLoader</class>
+		<class>org.ahiufomasao.utility.net.LoaderCollection</class>
+		<class>org.ahiufomasao.utility.net.MaterialSwfLoader</class>
+		<class>org.ahiufomasao.utility.net.NetStreamGroup</class>
+		<class>org.ahiufomasao.utility.net.SoundLoader</class>
+		<class>org.ahiufomasao.utility.net.StringLoader</class>
+		<class>org.ahiufomasao.utility.RectangleUtility</class>
+		<class>org.ahiufomasao.utility.StringUtility</class>
+	</include-classes>
+</flex-config>

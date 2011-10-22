@@ -1,1 +1,7 @@
-ユーティリティー系クラスを集めて整理中。
+ * 概要
+ * ビルド方法
+  FlashDevelop のプラグイン「ExportSWC」でビルド可能です。
+    http://sourceforge.net/projects/exportswc/files/
+  
+  また、 FlashDevelop の「プロジェクト設定 ＞ ビルドコマンド ＞ ビルド後に実行するコマンドラインへ"$(CompilerPath)/bin/compc.exe" -load-config+="$(ProjectDir)/AMUtility-config.xml"
+　 を設定することでビルドすることもできます。
