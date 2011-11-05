@@ -16,7 +16,7 @@ package org.ahiufomasao.utility.core
 		 * 
 		 * @param name ENUM 値の名前
 		 */
-		public function Enum(name:String) 
+		public function Enum(name:String = "") 
 		{
 			_name = name;
 		}
