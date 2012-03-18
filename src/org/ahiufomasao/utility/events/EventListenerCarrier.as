@@ -2,7 +2,7 @@ package org.ahiufomasao.utility.events
 {
 	import flash.events.Event;
 	/**
-	 * イベントリスナーコンテナ
+	 * イベントリスナーキャリア
 	 * 
 	 * @author asahiufo@AM902
 	 */
@@ -14,7 +14,7 @@ package org.ahiufomasao.utility.events
 		/**
 		 * コンストラクタ
 		 * 
-		 * @param listener 呼び出すイベントリスナー（event:Event, params:Object, carrier:EventListenerCarrier）
+		 * @param listener 呼び出すイベントリスナー（event:Event, params:任意の型, eventListenerCarrier:EventListenerCarrier）
 		 * @param params   イベントリスナーに渡す引数リスト
 		 */
 		public function EventListenerCarrier(listener:Function, params:Object) 

@@ -7,6 +7,8 @@ package org.ahiufomasao.utility
 	 */
 	public class DateUtility 
 	{
+		/** 1 秒を表すミリ秒 */
+		public static const millisecondsPerSecond:uint = 1000;
 		/** 1 分を表すミリ秒 */
 		public static const millisecondsPerMinute:uint = 1000 * 60;
 		/** 1時間を表すミリ秒 */

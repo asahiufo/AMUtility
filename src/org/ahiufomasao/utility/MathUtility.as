@@ -57,5 +57,22 @@
 			}
 			return angle;
 		}
+		
+		/**
+		 * 2 の冪乗の取得
+		 * 
+		 * @param size サイズ
+		 */
+		public static function getPowerOf2Size(size:Number):Number
+		{
+			var i:uint = 0;
+			var po2:Number = 0;
+			while (size > po2)
+			{
+				po2 = Math.pow(2, i);
+				i++;
+			}
+			return po2;
+		}
 	}
 }

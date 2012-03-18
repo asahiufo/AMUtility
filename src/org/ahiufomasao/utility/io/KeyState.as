@@ -16,9 +16,9 @@ package org.ahiufomasao.utility.io
 	{
 		private var _eventDispatcher:IEventDispatcher; // イベントを登録したイベントディスパッチャー
 		
-		private var _states:Dictionary;     // キーが押されているなら true、そうでないなら false
-		private var _sysStates:Dictionary;  // システム用キー入力状況
-		private var _keepStates:Dictionary; // キー押しっぱなし状況
+		private var _status:Dictionary;     // キーが押されているなら true、そうでないなら false
+		private var _sysStatus:Dictionary;  // システム用キー入力状況
+		private var _keepStatus:Dictionary; // キー押しっぱなし状況
 		
 		/**
 		 * コンストラクタ
@@ -27,9 +27,9 @@ package org.ahiufomasao.utility.io
 		{
 			_eventDispatcher = null;
 			
-			_states     = new Dictionary();
-			_sysStates  = new Dictionary();
-			_keepStates = new Dictionary();
+			_status     = new Dictionary();
+			_sysStatus  = new Dictionary();
+			_keepStatus = new Dictionary();
 		}
 		
 		/**
@@ -72,12 +72,12 @@ package org.ahiufomasao.utility.io
 		public function update():void
 		{
 			// 押しっぱなし状況設定
-			for (var keyCode:Object in _states)
+			for (var keyCode:Object in _status)
 			{
-				_keepStates[keyCode] = _states;
+				_keepStatus[keyCode] = _status;
 			}
 			
-			_sysStates = new Dictionary();
+			_sysStatus = new Dictionary();
 		}
 		
 		/**
@@ -87,8 +87,8 @@ package org.ahiufomasao.utility.io
 		 */
 		private function _onKeyDown(event:KeyboardEvent):void
 		{
-			_states[event.keyCode]    = true;
-			_sysStates[event.keyCode] = true;
+			_status[event.keyCode]    = true;
+			_sysStatus[event.keyCode] = true;
 		}
 		
 		/**
@@ -98,9 +98,9 @@ package org.ahiufomasao.utility.io
 		 */
 		private function _onKeyUp(event:KeyboardEvent):void
 		{
-			delete _states[event.keyCode];
-			delete _sysStates[event.keyCode];
-			delete _keepStates[event.keyCode];
+			delete _status[event.keyCode];
+			delete _sysStatus[event.keyCode];
+			delete _keepStatus[event.keyCode];
 		}
 		
 		/**
@@ -112,7 +112,7 @@ package org.ahiufomasao.utility.io
 		 */
 		public function checkPushed(keyCode:uint):Boolean
 		{
-			return (_states[keyCode] != undefined);
+			return (_status[keyCode] != undefined);
 		}
 		
 		/**
@@ -124,7 +124,7 @@ package org.ahiufomasao.utility.io
 		 */
 		public function checkSystemPushed(keyCode:uint):Boolean
 		{
-			return (_sysStates[keyCode] != undefined);
+			return (_sysStatus[keyCode] != undefined);
 		}
 		
 		/**
@@ -136,7 +136,7 @@ package org.ahiufomasao.utility.io
 		 */
 		public function checkPushedKeep(keyCode:uint):Boolean
 		{
-			return (_keepStates[keyCode] != undefined);
+			return (_keepStatus[keyCode] != undefined);
 		}
 	}
 }
