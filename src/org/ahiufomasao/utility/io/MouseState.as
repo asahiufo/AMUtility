@@ -18,11 +18,17 @@ package org.ahiufomasao.utility.io
 		private var _leftButton:Boolean;     // 左マウスボタン
 		private var _sysLeftButton:Boolean;  // システム用左マウスボタン
 		private var _leftButtonKeep:Boolean; // 左マウスボタンを押しっぱなしなら true
+		private var _prevLeftButton:Boolean; // 前フレームの左マウスボタン
 		
 		private var _localX:Number; // マウスカーソルのイベントディスパッチャー基準の x 座標
 		private var _localY:Number; // マウスカーソルのイベントディスパッチャー基準の y 座標
 		private var _stageX:Number; // マウスカーソルのグローバル基準の x 座標
 		private var _stageY:Number; // マウスカーソルのグローバル基準の y 座標
+		
+		private var _prevLocalX:Number; // 前フレームのマウスカーソルのイベントディスパッチャー基準の x 座標
+		private var _prevLocalY:Number; // 前フレームのマウスカーソルのイベントディスパッチャー基準の y 座標
+		private var _prevStageX:Number; // 前フレームのマウスカーソルのグローバル基準の x 座標
+		private var _prevStageY:Number; // 前フレームのマウスカーソルのグローバル基準の y 座標
 		
 		/** 左マウスボタン */
 		public function get leftButton():Boolean { return _leftButton; }
@@ -30,6 +36,9 @@ package org.ahiufomasao.utility.io
 		public function get systemLeftButton():Boolean { return _sysLeftButton; }
 		/** 左マウスボタンを押しっぱなしなら true */
 		public function get leftButtonKeep():Boolean { return _leftButtonKeep; }
+		/** 前フレームの左マウスボタン */
+		public function get prevLeftButton():Boolean { return _prevLeftButton; }
+		
 		/** マウスカーソルのイベントディスパッチャー基準の x 座標 */
 		public function get localX():Number { return _localX; }
 		/** マウスカーソルのイベントディスパッチャー基準の y 座標 */
@@ -38,6 +47,15 @@ package org.ahiufomasao.utility.io
 		public function get stageX():Number { return _stageX; }
 		/** マウスカーソルのグローバル基準の y 座標 */
 		public function get stageY():Number { return _stageY; }
+		
+		/** 前フレームのマウスカーソルのイベントディスパッチャー基準の x 座標 */
+		public function get prevLocalX():Number { return _prevLocalX; }
+		/** 前フレームのマウスカーソルのイベントディスパッチャー基準の y 座標 */
+		public function get prevLocalY():Number { return _prevLocalY; }
+		/** 前フレームのマウスカーソルのグローバル基準の x 座標 */
+		public function get prevStageX():Number { return _prevStageX; }
+		/** 前フレームのマウスカーソルのグローバル基準の y 座標 */
+		public function get prevStageY():Number { return _prevStageY; }
 		
 		/**
 		 * コンストラクタ
@@ -49,11 +67,17 @@ package org.ahiufomasao.utility.io
 			_leftButton     = false;
 			_sysLeftButton  = false;
 			_leftButtonKeep = false;
+			_prevLeftButton = false;
 			
 			_localX = 0;
 			_localY = 0;
 			_stageX = 0;
 			_stageY = 0;
+			
+			_prevLocalX = 0;
+			_prevLocalY = 0;
+			_prevStageX = 0;
+			_prevStageY = 0;
 		}
 		
 		/**
@@ -97,6 +121,13 @@ package org.ahiufomasao.utility.io
 		 */
 		public function update():void
 		{
+			// 前フレームの状況設定
+			_prevLeftButton = _leftButton;
+			_prevLocalX = _localX;
+			_prevLocalY = _localY;
+			_prevStageX = _stageX;
+			_prevStageY = _stageY;
+			
 			// 押しっぱなし状況設定
 			_leftButtonKeep = _leftButton;
 			
