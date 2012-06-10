@@ -52,10 +52,19 @@ package org.ahiufomasao.utility.io
 		public function get prevLocalX():Number { return _prevLocalX; }
 		/** 前フレームのマウスカーソルのイベントディスパッチャー基準の y 座標 */
 		public function get prevLocalY():Number { return _prevLocalY; }
-		/** 前フレームのマウスカーソルのグローバル基準の x 座標 */
+		/** 前フレームのマウスカーソルのイベントディスパッチャー基準のグローバル x 座標 */
 		public function get prevStageX():Number { return _prevStageX; }
-		/** 前フレームのマウスカーソルのグローバル基準の y 座標 */
+		/** 前フレームのマウスカーソルのイベントディスパッチャー基準のグローバル y 座標 */
 		public function get prevStageY():Number { return _prevStageY; }
+		
+		/** マウスカーソルのローカル基準移動量 x 軸 */
+		public function get movementQuantityLocalX():Number { return (_localX - _prevLocalX); }
+		/** マウスカーソルのローカル基準移動量 y 軸 */
+		public function get movementQuantityLocalY():Number { return (_localY - _prevLocalY); }
+		/** マウスカーソルのグローバル基準移動量 x 軸 */
+		public function get movementQuantityStageX():Number { return (_stageX - _prevStageX); }
+		/** マウスカーソルのグローバル基準移動量 y 軸 */
+		public function get movementQuantityStageY():Number { return (_stageY - _prevStageY); }
 		
 		/**
 		 * コンストラクタ
