@@ -2,10 +2,10 @@
 {
 	
 	/**
-	 * <code>MathUtil</code> クラスには、
+	 * <code>MathUtility</code> クラスには、
 	 * 一定の計算を行うメソッドがあります.
 	 * <p>
-	 * <code>MathUtil</code> クラスは完全な静的クラスであるため、
+	 * <code>MathUtility</code> クラスは完全な静的クラスであるため、
 	 * インスタンスを作成する必要はありません。
 	 * </p>
 	 * 
